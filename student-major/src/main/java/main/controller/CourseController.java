@@ -75,12 +75,3 @@ public class CourseController {
         return new ResponseEntity<>(teacherEntity.getName() + " " + teacherEntity.getSurname()
                 + " is assigned to " + courseEntity.getCourseName() + " course", HttpStatus.OK);
     }
-
-
-//    @GetMapping("students/{courseName}")//-
-//    public ResponseEntity<?> enrolledStudents(@PathVariable String courseName) {
-//        CourseEntity courseEntity = courseInter.getByName(courseName);
-//        List<StudentEntity> students = courseEntity.getEnrolledStudents();
-//        return new ResponseEntity<>("Enrolled students in " + courseName + ": " + students, HttpStatus.OK);
-//    }
-}
