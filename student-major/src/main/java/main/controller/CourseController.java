@@ -75,3 +75,4 @@ public class CourseController {
         return new ResponseEntity<>(teacherEntity.getName() + " " + teacherEntity.getSurname()
                 + " is assigned to " + courseEntity.getCourseName() + " course", HttpStatus.OK);
     }
+}
