@@ -42,8 +42,7 @@ public class StudentController {
 
     @GetMapping("/getAll") //+
     public ResponseEntity<?> getAll(){
-        List<StudentEntity> all = studentServiceInter.getAll();
-        return new ResponseEntity<>("All students in DB: " + all, HttpStatus.OK);
+        return new ResponseEntity<>("All students in DB: " + studentServiceInter.getAll(), HttpStatus.OK);
     }
 
     @PostMapping("/add") //+
