@@ -28,8 +28,7 @@ public class CourseController {
 
     @GetMapping("/allCourses")//+
     public ResponseEntity<?> getAll(){
-        List<CourseEntity> courses = courseServiceInter.getAllCourses();
-        return new ResponseEntity<>("All course in DB: " + courses, HttpStatus.OK);
+        return new ResponseEntity<>("All courses in DB: " + courseServiceInter.getAllCourses(), HttpStatus.OK);
     }
 
     @GetMapping("/courseByName/{name}") //+
